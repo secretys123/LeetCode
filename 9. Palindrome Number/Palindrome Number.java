@@ -8,7 +8,7 @@ public class Solution {
         int str=0;
         int end=s.length()-1;
         while(str<end){
-            char str_s=s.charAt(0);
+            char str_s=s.charAt(str);
             char end_s=s.charAt(end);
             if(str_s!=end_s){
                 return false;
