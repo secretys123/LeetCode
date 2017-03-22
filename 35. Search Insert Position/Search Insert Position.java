@@ -7,13 +7,11 @@ public class Solution {
             mid=(low+high)/2;
             if(target==nums[mid]) return mid;
             else if(target<nums[mid]){
-                high=mid;
-                low++;
+                high=mid-1;
             }else{
-                low=mid;
-                high--;
+                low=mid+1;
             }
         }
-        return mid;
+        return low;
     }
 }
